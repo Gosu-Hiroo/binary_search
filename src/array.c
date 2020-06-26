@@ -11,7 +11,15 @@ int main(){
   for(i = 0; i < n; i++){
     scanf("%d", &A[i]);
   }
-
+  
+  int mid;
+  lb = 0, ub = n;
+  while(ub - lb > 1){
+      mid = (lb + ub)/2;
+      if(A[mid] >= k)ub = mid;
+      else b = mid;
+  }
+  printf("%d", ub);
 
 
   return 0;
