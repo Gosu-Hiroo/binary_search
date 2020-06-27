@@ -20,7 +20,7 @@ int main(){
   }
  
  int mid;
- lb = 0, ub = 0x3f3f3f3f; //inf
+ lb = 0, ub = 1000000000; //inf
  while(ub - lb > 1){
      mid = (ub + lb)/2;
      if(need_bags(mid) <= k)ub = mid;

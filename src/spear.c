@@ -19,7 +19,7 @@ int main(){
   }
 
   int mid;
-  lb = 0, ub = 0x3f3f3f3f;//inf
+  lb = 0, ub = 1000000001;//inf
   while(ub - lb > 1){
       mid = (ub + lb)/2;
       if(make_spears(mid) < k)ub = mid;
